@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Fake News Tester</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Expose Fake News</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tester">Tester</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#explanation">Explanation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Who do this</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    
+    <div class="row pageheight">
+      <a id="home"></a>
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5">¿Is this REAL or is <strong>FAKE NEWS?</strong></h1>
+        <img src="img/fakenews.png" style="max-width: 100%" />
+        <p class="lead">Dont wait anymore! Paste your news here and find magically if this is true or is FAKE NEWS</p>
+        <a class="btn btn-info" href="#tester">Let's Go Detect Fake News</a>
+      </div>
+    </div>
+
+    <div class="row pageheight">
+      <a id="tester"></a>
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5">Paste your doubtful news here</h1>
+        <br/>
+        <form>
+          <textarea id="doubtfulNews" class="form-control rounded-2" style="max-width: 100%;margin: 0 auto;" cols="80" rows="6" placeholder="Argentinian datacientist finds the cure of innocence. click here to win a lot of easy money....">First, we are not living in a post-truth era. Why not? Consider the statement “We are living in a post-truth era.” Is it true? If so, it cannot be true.
+
+Likewise, it is not the case that humans are irrational. Consider the statement, “Humans are irrational.” Is that statement rational? If it is, it cannot be true—at least, if it is uttered and understood by humans. (It would be another thing if it was an observation exchanged among an advanced race of space aliens.) If humans were truly irrational, who specified the benchmark of rationality against which humans don’t measure up? How did they conduct the comparison? Why should we believe them? Indeed, how could we understand them?
+
+In his book The Last Word, the philosopher Thomas Nagel showed that truth, objectivity, and reason are not negotiable.2 As soon as you start making a case against them, you are making a case, which means you are implicitly committed to reason. Nagel calls this argument Cartesian, after Descartes’ famous argument that just as the very fact that one is pondering one’s existence shows that one must exist, the very fact that one is examining the validity of reason shows that one is committed to reason. A corollary is that we don’t defend or justify or believe in reason, and we certainly do not, as it is sometimes claimed, have faith in reason. As Nagel puts it, each of these is “one thought too many.” We don’t believe in reason; we use reason.
+
+This may sound like logic-chopping, but it’s built into the way we make everyday arguments. As long as you’re not bribing or threatening your listeners to mouth agreement with you, but trying to persuade them that you’re right—that they should believe you, that you’re not lying, or full of crap— then you have conceded the primacy of reason. As soon as you try to argue that we should believe things by any route other than reason, you’ve lost the argument, because you’ve appealed to reason. That is why a defense of reason is unnecessary, perhaps even impossible.</textarea><br/>
+          <a class="btn btn-info" href="#tester" onclick="testNews()">Check if is REAL </a>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="row pageheight">
+      <a id="explanation"></a>
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5">How we do this</h1>
+        <p>
+          We applied several statistics technics... <br>
+          bla bla bla.... <br>
+        </p>
+      </div>
+    </div>
+
+    <div class="row pageheight">
+      <a id="team"></a>
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5">This is us.</h1>
+        <p>We are sensitive people, please dont laugth</p>
+        <br/>
+        <div class="row">
+        
+          <div class="col-md-3">
+            <div class="card" style="width: 100%;">
+              <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16ef7795a55%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16ef7795a55%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.125%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Marcos Galperin</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card" style="width: 100%;">
+              <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16ef7795a55%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16ef7795a55%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.125%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Yoda</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card" style="width: 100%;">
+              <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16ef7795a55%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16ef7795a55%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.125%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Jesus</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card" style="width: 100%;">
+              <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16ef7795a55%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16ef7795a55%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.125%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Steve Jobs</p>
+              </div>
+            </div>  
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+
+   <div class="row pageheight">
+      <a id=""></a>
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5">This is the end</h1>
+        <p>
+          Thank you!
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <!--script src="vendor/jquery/jquery.slim.min.js"></script-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript">
+    function TestText(){
+      alert($('#doubtfulNews').val())
+    }
+  </script>
+  <style type="text/css">
+    h1{
+      padding-top: 40px; 
+    }
+    .pageheight{
+      min-height: calc(100vh - 56px);
+      padding-top:56px;
+    }
+    .navbar{
+      width: calc(100vw);
+      height: 56px;
+      position:fixed;
+      z-index: 99;
+    }
+    .btn{
+      cursor: pointer;
+    }
+  </style>
+  <script type="text/javascript">
+
+    function testNews() {
+       
+       $.ajax({
+           type: "POST",
+           url: "/predict_proba",
+           crossDomain: true,
+           //dataType:'json',
+           success: function (msg) {
+               if (msg.prediction==1) {
+                   alert("this is good news:"+msg.prediction);
+               } else {
+                   alert("this is bad news:"+msg.prediction);
+               }
+           },
+           data:JSON.stringify({"text": $("#doubtfulNews").val()})
+           
+       });
+    }
+    
+  </script>
+</body>
+
+</html>
