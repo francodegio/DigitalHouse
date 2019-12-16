@@ -33,7 +33,7 @@ app = Flask('Predictor')
 #    d = d[ columns ]
 #    return d
 
-@app.route('/predict',methods=['POST'])
+@app.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json(force=True)
     X = [data["text"]]
