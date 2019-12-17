@@ -100,7 +100,10 @@ This may sound like logic-chopping, but it’s built into the way we make everyd
         <h1 class="mt-5">This is us.</h1>
         <p>We are sensitive people, please dont laugth</p>
         <br/>
-        <div class="row">
+
+		<a href="" class="btn btn-info" data-toggle="modal" data-target="#modal_team" >Click to See </a>
+        
+        <!-- div class="row">
         
           <div class="col-md-3">
             <div class="card" style="width: 100%;">
@@ -138,7 +141,7 @@ This may sound like logic-chopping, but it’s built into the way we make everyd
             </div>  
           </div>
           
-        </div>
+        </div-->
         
       </div>
     </div>
@@ -158,11 +161,11 @@ This may sound like logic-chopping, but it’s built into the way we make everyd
 
 
 <!-- Modal -->
-<div class="modal fade" id="modal_loading" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div class="modal fade" id="modal_loading" tabindex="-1" role="dialog" aria-labelledby="res_loading" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle" style="text-align: center">Donald is reading your news. Please WAIT!</h5>
+        <h5 class="modal-title" id="res_loading" style="text-align: center">Donald is reading your news. Please WAIT!</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -175,11 +178,11 @@ This may sound like logic-chopping, but it’s built into the way we make everyd
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="modal_badnews" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div class="modal fade" id="modal_badnews" tabindex="-1" role="dialog" aria-labelledby="res_fake" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle" style="text-align: center">Oh NO! It's FAKE NEWS and Donald knowns</h5>
+        <h5 class="modal-title" id="res_fake" style="text-align: center">Oh NO! It's FAKE NEWS and Donald knowns</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -193,11 +196,11 @@ This may sound like logic-chopping, but it’s built into the way we make everyd
 
 
 <!-- Modal -->
-<div class="modal fade" id="modal_goodnews" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div class="modal fade" id="modal_goodnews" tabindex="-1" role="dialog" aria-labelledby="res_real" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle" style="text-align: center">This News seems REAL, better check again</h5>
+        <h5 class="modal-title" id="res_real" style="text-align: center">This News seems REAL, better check again</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -210,11 +213,11 @@ This may sound like logic-chopping, but it’s built into the way we make everyd
 </div>
 
 
-<div class="modal fade" id="modal_work" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div class="modal fade" id="modal_work" tabindex="-1" role="dialog" aria-labelledby="explain_human" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle" style="text-align: center">Dont do this without supervision</h5>
+        <h5 class="modal-title" id="explain_human" style="text-align: center">Dont do this without supervision</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -226,11 +229,11 @@ This may sound like logic-chopping, but it’s built into the way we make everyd
   </div>
 </div>
 
-<div class="modal fade" id="modal_notebook" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div class="modal fade" id="modal_notebook" tabindex="-1" role="dialog" aria-labelledby="explain_ds" aria-hidden="true">
   <div class="modal-dialog" role="document" style="width: 95%">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle" style="text-align: center">Pretty sure this could be easier</h5>
+        <h5 class="modal-title" id="explain_ds" style="text-align: center">Pretty sure this could be easier</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -242,10 +245,25 @@ This may sound like logic-chopping, but it’s built into the way we make everyd
   </div>
 </div>
 
+<div class="modal fade" id="modal_team" tabindex="-1" role="dialog" aria-labelledby="team" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="width: 95%;max-width: inherit;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="team" style="text-align: center">Happy Christmas folks!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <img src="img/team.jpg" style="max-height: inherit" />
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
   <!-- Bootstrap core JavaScript -->
-  <!--script src="vendor/jquery/jquery.slim.min.js"></script-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <style type="text/css">
@@ -279,14 +297,11 @@ This may sound like logic-chopping, but it’s built into the way we make everyd
            type: "POST",
            url: "/predict",
            crossDomain: true,
-           //dataType:'json',
            success: function (msg) {
                if (msg.prediction==1) {
                	   $('#modal_badnews').modal('show');
-               	   //alert("this is bad news:"+msg.prediction);
                } else {
                	   $('#modal_goodnews').modal('show');
-                   //alert("this is good news:"+msg.prediction);
                };
                $('#modal_loading').modal('hide');
            },
